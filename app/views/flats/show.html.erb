@@ -1,0 +1,13 @@
+
+<% @flats.each do |flat|  %>
+<h1><%= flat['name'] %></h1>
+<div class="card mb-3">
+  <img src="<%= flat['imageUrl'] %>" class="card-img-top w-50" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"><%= flat['name'] %></h5>
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    <%= link_to "Back", flats_path, class: "btn btn-sm btn-info" %>
+  </div>
+</div>
+<% end %>
